@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="11.0.1" />
+      <PackageReference Include="morelinq" Version="3.3.2" />
+      <PackageReference Include="OneOf" Version="3.0.263" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ArtQuiz.Domain\ArtQuiz.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Persistence">
+        <HintPath>..\..\MyKit\MyKit\MyKit\Persistence\bin\Debug\net6.0\Persistence.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
